@@ -1,0 +1,23 @@
+.external {
+    color: blueviolet;
+}
+
+.about {
+    color: deeppink;
+}
+
+#para1 {
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    color: orange;
+}
+
+.page{
+    color: yellow;
+    background-color: black;
+    text-align: center;
+}
+
+blockquote{
+    color: violet;
+    
+}
