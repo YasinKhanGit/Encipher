@@ -1,0 +1,59 @@
+.text1{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: aqua;
+}
+.text2{
+    font-size: medium;
+    background-color: bisque;
+}
+.text3{
+    color: pink;
+    margin-left: auto;
+}
+.text4{
+    color: blue;
+    padding: auto;  
+}
+.text5{
+    color: blueviolet;
+    border: 0ch;
+}
+input[type="text"]{
+    width: 100%;
+    border: 2px solid red;
+
+}
+input[type="email"]{
+     width: 100%;
+  padding: 12px;
+  margin: 8px 0;
+  box-sizing: border-box;
+  border: 1px solid #555;
+  outline: none;
+}
+input[type="password"]{
+    width: 100%;
+  padding: 12px;
+  margin: 10px 0;
+  box-sizing: border-box;
+  border: none;
+  background-color: #3CBC8D;
+  color: white;
+}
+#textA{
+    color: #3CBC8D;
+    background-color: azure;
+}
+#textB{
+    margin: 22%;
+    background-color: crimson;
+}
+
+#textC{
+    color: yellow;
+
+}
+
+h1,h2,p{
+    font-family: Arial, sans-serif; color: darkslategray;
+}
