@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Article</title>
+
+<style>
+    body{
+        font-family: Arial, sans-serif;
+        line-height: 1.6;
+        margin: 20px;
+    }
+
+    hr{
+        margin: 5px 0;
+    }
+
+    .menu{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        font-size: 14px;
+    }
+
+    .left, .right{
+        display: flex;
+        gap: 15px;
+    }
+
+    .blue{
+        color: rgb(54, 157, 247);
+        cursor: pointer;
+    }
+
+    .active{
+        border-bottom: 2px solid black;
+        padding-bottom: 4px;
+    }
+
+    h2, h3{
+        font-family: Georgia, 'Times New Roman', Times, serif;
+        font-weight: normal;
+    }
+
+
+    .container{
+        display: flex;
+        gap: 30px;
+    }
+
+    .content{
+        width: 75%;
+    }
+
+    .app{
+        width: 25%;
+        font-size: 14px;
+        border-left: 1px solid #ccc;
+        padding-left: 15px;
+    }
+
+    .app h4{
+        margin: 0;
+        font-size: 15px;
+    }
+
+    .app small{
+        color: #3366cc;
+        cursor: pointer;
+    }
+
+    .app{
+        margin-top: 15px;
+    }
+</style>
+</head>
+
+<body>
+<div class="container">
+<div class="content">
+    <div style="display: flex; align-items: center; justify-content: space-between;">
+        <h2>Article (Grammar)</h2>
+        <small class="blue" style="font-family: Impact;">78 languages ↴</small>
+    </div>
+
+    <hr>
+
+    <div class="menu">
+        <div class="left">
+            <p class="active"><b>Article</b></p>
+            <p class="blue"><b>Talk</b></p>
+        </div>
+
+        <div class="right">
+            <b class="active">Read</b>
+            <b class="blue">Edit</b>
+            <b class="blue">View history</b>
+            <b>Tools</b>
+        </div>
+    </div>
+
+    <hr>
+
+    <small>From Wikipedia, the free encyclopedia</small>
+    <br><br>
+
+    <p>
+    In <b class="blue">grammar</b>, an <b>article</b> is any member of a class of
+    dedicated words that are used with <b class="blue">noun</b> to identify the
+    object or idea. <sup class="blue">[vague]</sup>
+    The category of articles constitutes a <b class="blue">part of speech</b>.
+    </p>
+
+    <p>
+    Articles combine with nouns to form noun phrases and typically specify the
+    grammatical <b class="blue">definiteness</b> of the noun phrase.
+    In <b class="blue">English</b>, <b>the</b> and <b>a</b> (rendered as <b>an</b>)
+    are the definite and indefinite articles respectively.
+    </p>
+
+    <h3>Types of article <small class="blue">[ edit ]</small></h3>
+    <hr>
+
+    <h3><b>Definite article</b> <small class="blue">[ edit ]</small></h3>
+
+    <p style="margin-left: 50px;">
+    Definite article" redirects here. For the comedy album, see Definite Article.
+    </p>
+    <p>A <b>definite article</b> is an article that marks a <b class="blue">definite noun phrase</b>. Definite articles, such as the English the, are used to refer to a particular member of a group. It may be something that the speaker has already mentioned, or it may be something uniquely specified</p>
+    <p>For example, Sentence 1 uses the definite article and thus expresses a request for a particular book. In contrast, Sentence 2 uses an indefinite article and thus conveys that the speaker would be satisfied with any book</p>
+    <ol>
+        <li>Give me <b>the</b> book.</li>
+        <li>Give me <b>a</b> book.</li>
+    </ol>
+    <p>The definite article can also be used in English to indicate a specific class among other classes:</p>
+    <p style="margin-left:20px;">
+        <i><b>The</b> cabbage white butterfly lays its eggs on members of the Brassica genus.</i>
+    </p>
+<p>However, recent developments show that definite articles are morphological elements linked to certain noun types due to <b class="blue">lexicalization</b>. Under this point of view, definiteness does not play a role in the selection of a definite article more than the lexical entry
+attached to the article [clarification needed [1][2]</p>
+</div>
+
+<div class="app">
+    <h4>Appearance <small>hide</small></h4>
+    <hr>
+
+    <section>
+        <b>Text</b><hr>
+        <input type="radio">Small<br>
+        <input type="radio">Standard<br>
+        <input type="radio">Large
+    </section><br>
+
+    <section>
+        <b>Width</b><hr>
+        <input type="radio">Standard<br>
+        <input type="radio">Wide
+    </section><br>
+
+    <section>
+        <b>Color (beta)</b><hr>
+       <input type="radio"> Automatic<br>
+        <input type="radio">Light<br>
+        <input type="radio">Dark
+    </section>
+</div>
+
+</div>
+
+</body>
+</html>
