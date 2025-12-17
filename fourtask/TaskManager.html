@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task Manager page</title>
+</head>
+<style>
+    body{
+        background-color:whitesmoke;
+        margin-left:30%;
+        margin-top: 10%;
+        margin-right: 30%;
+       }
+    .main{
+        background-color:rgb(255, 255, 255);
+        border-radius: 10px;
+        padding: 10px;
+    }
+    h1{
+        text-align: center;
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        color: rgb(74, 169, 252);
+    }
+    .head{
+        display: flex;
+        justify-content: space-evenly;}
+  input[type="text"]{
+    width:300px;
+    height:30px;
+    border: 2px solid rgb(74, 169, 252);
+    border-radius: 10px 10px 10px 10px;
+}
+    .small{
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        color: rgb(249, 250, 250);
+        background-color: rgb(74, 169, 252);
+        border: 1px solid rgb(74, 169, 252);
+        border-radius: 10px 10px 10px 10px;
+        border-width: 10px;
+    }
+    .small1{
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        color: rgb(249, 250, 250);
+        background-color: red;
+        border: 1px solid red;
+        border-radius: 10px;
+        border-width: 10px;
+        margin-left: 5%;
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+    .text{
+        margin-top: 30px;
+        display: flex;
+        justify-content: space-around;
+    }
+    .text1{
+        margin-top: 30px;
+        display: flex;
+        justify-content: space-around;
+    }
+    .text2{
+        margin-top: 30px;
+        display: flex;
+        justify-content: space-around;
+    }
+    .icon{
+        border: 2px solid rgb(74, 169, 252);
+        border-radius: 10px;
+}
+</style>
+<body>  
+    <div class="main">
+    <h1 >Task Manager</h1>
+    <div class="head">
+    <input type="text" placeholder="What needs to be done ?">
+    <button class="small">Add Task</button>
+    </div>
+
+
+
+
+
+    <div class="text">
+        <h2>&#9989;</h2>
+        <del style="margin-top: 30px;color: lightgray;">Task A</del>
+        <button class="small1">Remove</button>
+    </div>
+    <hr style="border-style: dotted;margin-left:50px;margin-right: 50px;margin-top: 0%;">
+   
+    <div class="text1">
+        <h2>&#9989;</h2>
+        <b style="margin-top: 30px;">Task B</b>
+        <button class="small1">Remove</button>
+    </div>
+    <hr style="border-style: dotted;margin-left:50px;margin-right: 50px;margin-top: 0%;">
+   
+    <div class="text2">
+        <h2 class="icon">&#9989;</h2>
+        <del style="margin-top: 30px;color: lightgray">Task C</del>
+        <button class="small1">Remove</button>
+    </div>
+    <hr style="border-style: dotted;margin-left:50px;margin-right: 50px;margin-top: 0%;">
+</div>
+</body>
+</html>
