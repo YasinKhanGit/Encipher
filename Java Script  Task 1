@@ -1,0 +1,90 @@
+/*task1*/
+var a="10";
+var b=5;
+var z=a+b;
+console.log(z);
+console.log(typeof z)
+
+
+/*task2*/
+var x=10;
+var y="10";
+var z=(x==y);
+var w=(x===y);
+console.log(z)
+console.log(w)
+
+/*task3*/
+var num=15;
+var a=(num>0)?"positive":"Negative"
+console.log(a)
+
+/*task4*/
+var p=10;
+var q=20;
+var r="30";
+var z=(p+q+r);
+console.log(z)
+
+/*task5*/
+
+var a=true;
+var b=Number(a);
+var c=5;
+var d=(b+c);
+console.log(d)
+console.log(typeof d)
+
+
+/*task 6*/
+var a=7;
+var b=3;
+console.log(a+b);
+console.log(a-b);
+console.log(a*b);
+console.log(a**b);
+console.log(a%b);
+console.log(a==b);
+console.log(a===b);
+console.log(a!=b);
+console.log(a<b);
+console.log(a>b);
+
+
+/*task 7*/
+var mark="85";
+var pass_mark=Number(mark)>=40;
+console.log(pass_mark);
+
+
+
+/* task 8*/
+var age=20;
+var id=false;
+var enter=(age>=18 && id==true);
+console.log(enter)
+
+
+
+/*task 9*/
+
+let count;
+console.log(count);
+console.log(typeof count);
+count=10;
+console.log(count);
+console.log(typeof count);
+
+
+/*task 10 */
+var num1="5";
+var num2="2";
+var add_num=(num1+num2);
+var sub_num=(num1-num2);
+var mul_num=(num1*num2);
+console.log(add_num)
+console.log(sub_num)
+console.log(mul_num)
+console.log(typeof add_num)
+console.log(typeof sub_num)
+console.log(typeof mul_num)
