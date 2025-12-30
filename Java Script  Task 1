@@ -1,90 +1,271 @@
-/*task1*/
-var a="10";
-var b=5;
-var z=a+b;
-console.log(z);
-console.log(typeof z)
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS</title>
+<script>
+    Task1
+    let a=prompt("Enter the Username:");
+    console.log(a)
+    function   alert_message(){
+        alert("Your PC is Hacker 👾")
+    }
+    alert_message()
+
+    Task2
+    let number=prompt("Enter the Number:");
+    console.log(number)
+    if(number%2==0){
+        alert("Even Number");
+    }
+    else{
+        alert("Odd Number");
+    }
+
+    Task3
+    let num1=prompt("Enter the First number:");
+    let calculation=prompt("Enter the operator");
+    let num2=prompt("Enter the Second number:");
+    if (calculation=="+"){
+        alert(Number(num1)+Number(num2));
+    }
+    else if(calculation=="-"){
+        alert(Number(num1)-Number(num2));
+    }
+    else if(calculation=="*"){
+        alert(Number(num1)*Number(num2));
+    }
+    else if(calculation=="/"){
+        alert(Number(num1)/Number(num2));
+    }
+
+    Task4
+    let age=prompt("Enter Your Age:")
+    console.log(age)
+    if(age>=18){
+        confirm("You Are Eligible For Voting")
+    }
+    else{
+        alert("You are not Eligible for Voting")
+    }
+
+    Task5
+    let num=prompt("Enter number for multiplication:")
+    console.log(num)
+    for(i=1;i<=10;i++){
+        console.log(num*i)
+    }
+
+    Task6
+    let result=prompt("enter the Limit:")
+    console.log(result)
+    let store=0;   
+    for(i=1;i<=result;i++){
+        store+=i;
+        console.log(store)
+    }
+
+    Task7
+    let password=prompt("Enter your Password:")
+    console.log(password)
+    var count=password.length;
+    if (count!=8){
+        alert("Password is invalid ❌")
+    }
+    else{
+        confirm("Your Password is vaild 👍")
+    }
+
+    Task8
+    let grade=prompt("Enter the Mark")
+    console.log(grade)
+    if (grade>=90){
+        confirm("Your Grade is A")
+    }
+    else if(grade>=70 && grade<=89){
+        confirm("Your Grade is B")
+    }
+    else if (grade>=50  && grade<=69){
+        confirm("Your Grade is C")
+    }
+    else{
+        confirm("Your Grade is Fail")
+    }
+
+    Task9
+    let a=prompt("Enter the number A:")
+    let b=prompt("Enter the number B:")
+    let c=prompt("Enter the number C:")
+    if ((Number(a)>Number(b)) && (Number(a)>Number(c))){
+        confirm("A is largest number")
+    }
+    else if((Number(b)>Number(a))&&(Number(b)>Number(c))){
+        confirm("B is largest number")
+    }
+    else{
+       confirm("C is largest number") 
+    }
+
+    Task10
+    let obj={username:"yasin",password:1234}
+    console.log(obj)
+    let name=prompt("enter the name")
+    let password=prompt("enter the password")
+    console.log(name,password)
+    if (name!=obj.username){
+        alert("wrong user name")
+    }
+    else if (password!=obj.password){
+        alert("wrong user password")
+    }
+    else{
+        confirm("your login is completed")
+    }
+
+    Task11
+    let limit=prompt("enter the limit:")
+    console.log(limit)
+    let store=0;
+    for(i=1;i<=limit;i++){
+            if(i%2==0){
+                store++;
+            }
+        }
+    alert(store);
+
+    Task12
+    let a=prompt("enter numbers to reverse:")
+    var b="";
+    function reverse(){
+        for (var i=a.length-1;i>=0;i--){
+            b+=a[i]
+            alert(b)
+        } 
+    }
+    reverse()
+    
+    Task13
+    var amount1=prompt("enter the principal amount:")
+    var amount2=prompt("enter the rate of interest:")
+    var amount3=prompt("enter the time:")
+    function simple_interest(){
+        var formula=(amount1*amount2*amount3)/100
+        confirm("the final amount" + formula)
+    }
+    simple_interest()
+
+    Task14
+    let num=8;
+    console.log(num)
+    let guess=prompt("Guess the number:")
+    if (guess>num){
+        alert("to high")
+    }
+    else if(guess<num){
+        alert("too low")
+    }
+    else{
+        confirm("Your number is correct")
+    }
+
+    Task15
+   let num=prompt("enter number to check prime or not:")
+
+    bool=false;
+
+   for(i=2;i<num;i++){
+    if(num%i==0){
+        console.log("not a prime")
+        bool=true;
+        break;
+    }
+   }
+   if(bool==false){
+    console.log("prime number")
+   }
 
 
-/*task2*/
-var x=10;
-var y="10";
-var z=(x==y);
-var w=(x===y);
-console.log(z)
-console.log(w)
+    Task16
+    let fac=prompt("Enter the number:");
+    var store=1;
+    for (i=1;i<=fac;i++){
+        store=i*store;
+        console.log(store)
+    }
 
-/*task3*/
-var num=15;
-var a=(num>0)?"positive":"Negative"
-console.log(a)
+    Task17
+    let digit=prompt("enter the number")
+    var c=0;
+    for(i=1;i<=digit.length;i++){
+            c++;     
+    }
+    console.log(c);
 
-/*task4*/
-var p=10;
-var q=20;
-var r="30";
-var z=(p+q+r);
-console.log(z)
+    Task18
+    let menu = prompt("1. Add\n2. Sub\n3. Mul");
+    let num1 = Number(prompt("Enter first number"));
+    let num2 = Number(prompt("Enter second number"));
 
-/*task5*/
+    function addition(a, b) {
+        return a + b;
+    }
 
-var a=true;
-var b=Number(a);
-var c=5;
-var d=(b+c);
-console.log(d)
-console.log(typeof d)
+    function subtraction(a, b) {
+        return a - b;
+    }
 
+    function multiplication(a, b) {
+        return a * b;
+    }
+    switch (menu) {
+        case "1":
+            alert( addition(num1, num2));
+            break;
 
-/*task 6*/
-var a=7;
-var b=3;
-console.log(a+b);
-console.log(a-b);
-console.log(a*b);
-console.log(a**b);
-console.log(a%b);
-console.log(a==b);
-console.log(a===b);
-console.log(a!=b);
-console.log(a<b);
-console.log(a>b);
+        case "2":
+            alert(subtraction(num1, num2));
+            break;
 
+        case "3":
+            alert(multiplication(num1, num2));
+            break;
+    }
 
-/*task 7*/
-var mark="85";
-var pass_mark=Number(mark)>=40;
-console.log(pass_mark);
+    Task19 for even
+    let input=prompt("enter the limit")
+    let c=0;
+    for (i=1;i<=input;i++){
+        if(i%2==0){
+           c+=i; 
+        }
+    }
+    console.log(c)
 
+    odd number
+    let input=prompt("enter the limit")
+    let d=0;
+    for (i=1;i<=input;i++){
+        if(i%2!=0){
+           d+=i; 
+        }
+    }
+    console.log(d)
 
+    //Task 20
+    let choice=confirm("do you want to exit")
 
-/* task 8*/
-var age=20;
-var id=false;
-var enter=(age>=18 && id==true);
-console.log(enter)
+    if (choice){
+        alert("You can leave")
+    }
+    else{
+        alert("you can use untill you die")
+    }
 
-
-
-/*task 9*/
-
-let count;
-console.log(count);
-console.log(typeof count);
-count=10;
-console.log(count);
-console.log(typeof count);
-
-
-/*task 10 */
-var num1="5";
-var num2="2";
-var add_num=(num1+num2);
-var sub_num=(num1-num2);
-var mul_num=(num1*num2);
-console.log(add_num)
-console.log(sub_num)
-console.log(mul_num)
-console.log(typeof add_num)
-console.log(typeof sub_num)
-console.log(typeof mul_num)
+</script>
+</head>
+<body>
+    <h1>Hello!</h1> 
+  
+</body>
+</html>
