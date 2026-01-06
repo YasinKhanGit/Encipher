@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task-10</title>
+    <style>
+        .box{
+            width: 300px;
+            height: 200px;
+            border: 2px solid black;
+        }
+    </style>
+</head>
+<body>
+
+<div class="box" onmousemove="changeColor(event)"></div>
+
+<script>
+    function changeColor(e){
+        let a = e.offsetX % 256;
+        let b = e.offsetY % 256;
+        let c = (a + b) % 256;
+
+        e.target.style.backgroundColor =`rgb(${a}, ${b}, ${c})`;
+    }
+</script>
+
+</body>
+</html>

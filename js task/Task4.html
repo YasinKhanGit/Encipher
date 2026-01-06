@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task4</title>
+    <style>
+        .hide{
+            display: none;
+        }
+    </style>
+</head>
+<body>
+    <input type="button" onclick="button_1()" value="this is button can show the value ">
+    <input type="button" onclick="button_2()" value="this is button can hide the value ">
+    <p id="para"></p>
+    
+</body>
+<script>
+    function button_1(){
+        const p =document.getElementById('para')
+        p.innerHTML="Lorem ipsum dolor sit amet consectetur, adipisicing elit. Suscipit, expedita. Quasi aliquid, temporibus laborum atque molestiae accusamus perferendis optio blanditiis nam, tempora aut, autem exercitationem fugiat. Nemo impedit culpa velit?";
+    }
+    function button_2(){
+    let element=document.getElementById('para')
+    element.classList.toggle('hide')
+    }
+</script>
+</html>

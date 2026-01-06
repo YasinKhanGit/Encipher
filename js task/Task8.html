@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task-8</title>
+
+    <style>
+        .tooltip {
+            display: none;
+            background-color: black;
+            color: white;
+            padding: 5px 10px;
+            position: absolute;
+            border-radius: 5px;
+            font-size: 14px;
+            margin-top: 10px;
+        }
+    </style>
+</head>
+
+<body>
+
+<button onmouseenter="showTip()" onmouseleave="hideTip()">
+    Hover me
+</button>
+
+<div id="tip" class="tooltip">
+    This is a tooltip message
+</div>
+
+<script>
+    function showTip() {
+        document.getElementById("tip").style.display = "block";
+    }
+
+    function hideTip() {
+        document.getElementById("tip").style.display = "none";
+    }
+</script>
+
+</body>
+</html>

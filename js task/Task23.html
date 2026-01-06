@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task-23</title>
+</head>
+<body>
+
+    <input type="text" oninput="showEvent(event)" placeholder="Type here">
+    <br><br>    
+    <button onclick="showEvent(event)">Click here</button> 
+
+    <p id="result"></p>
+
+</body>
+
+<script>
+    function showEvent(e){
+        let eventType = e.type;
+        let Triggered = e.target.tagName;
+
+        document.getElementById("result").innerText =`Event Type:${eventType} / Triggered by:  ${Triggered}`;
+    }
+</script>
+
+</html>

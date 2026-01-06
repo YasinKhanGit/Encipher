@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TAsk-5</title>
+    <style>
+        .hr{
+            color:red;
+        }
+    </style>
+</head>
+<body>
+    <div >
+        <p ondblclick="para()">double click to add more text in the paragraph</p>
+        <p id="name" class="hr"></p>
+    </div>
+</body>
+<script>
+    function para(){
+    document.getElementById("name").innerHTML+=`this is word to add in this paragraph`;
+    }
+</script>
+</html>

@@ -1,0 +1,44 @@
+<html>
+<head>
+    <style>
+        *{
+            margin: 25px;
+            box-sizing: border-box;
+        }
+        .parent{
+            height: 250px;
+            width: 250px;
+            border: 2px solid blue;
+        }
+        .child{
+            height: 150px;
+            width: 150px;
+            border: 2px solid green;
+        }
+    </style>
+</head>
+<body>
+    <div class="parent" id="par">
+        Parent
+        <div class="child" id="chi">
+            Child
+        </div>
+    </div>
+    <script>
+        let parent=document.getElementById('par')
+        let child=document.getElementById('chi')
+        
+        parent.addEventListener('click',par_name())
+        
+        function par_name(){
+            console.log("Parent Clicked")
+        }
+        
+        child.addEventListener('click',chi_name())
+
+        function chi_name(){
+            console.log("Child Clicked")
+        }
+    </script>
+</body>
+</html>

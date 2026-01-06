@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task-11</title>
+</head>
+
+<body>
+<h1>This Page is blocked the Right Click</h1>
+</body>
+
+<script>
+    document.addEventListener("contextmenu", function(e){
+        e.preventDefault()
+        alert("right click doesn't work");});
+</script>
+
+</html>

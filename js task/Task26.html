@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Task-26</title>
+<style>
+    *{
+        margin-left:85px;
+    }
+    .parent {
+        width: 300px;
+        height: 150px;
+        background-color: red;
+        padding: 20px;
+    }
+    .child {
+        width: 150px;
+        height: 80px;
+        background-color: blue;
+        text-align: center;
+        line-height: 80px;
+    }
+</style>
+</head>
+<body>
+    <div class="parent">
+        parent
+        <div class="child">
+            child
+        </div>
+    </div>
+</body>
+<script>
+    let par = document.getElementsByClassName('parent')[0];
+    let chi = document.getElementsByClassName('child')[0];
+
+    par.addEventListener('click', paren);
+    chi.addEventListener('click', chil);
+
+    function paren(){
+        alert('It is parent');
+    }
+
+    function chil(e){
+        alert('It is child');
+        e.stopPropagation(); 
+    }
+</script>
+</html>

@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Task-18</title>
+</head>
+<body>
+
+<h2>Select Country</h2>
+
+<select id="option" onchange="changeBgColor()">
+    <option value="">Select the option</option>
+    <option value="India">India</option>
+    <option value="Russia">Russia</option>
+    <option value="UK">UK</option>
+    <option value="America">America</option>
+</select>
+
+<script>
+    function changeBgColor() {
+        let value = document.getElementById("option").value;
+
+        if (value === "India") {
+            document.body.style.backgroundColor = "blue";
+        } 
+        else if (value === "Russia") {
+            document.body.style.backgroundColor = "green";
+        } 
+        else if (value === "UK") {
+            document.body.style.backgroundColor = "red";
+        } 
+        else if (value === "America") {
+            document.body.style.backgroundColor = "yellow";
+        }
+    }
+</script>
+
+</body>
+</html>

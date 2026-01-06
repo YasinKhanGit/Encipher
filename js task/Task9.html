@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task-9</title>
+    <style>
+        .box{
+            width: 200px;
+            height: 200px;
+            border: 2px solid black;
+        }
+    </style>
+</head>
+<body>
+
+<div class="box" onmousemove="showCoords(event)">
+</div>
+
+<h3 id="output"></h3>
+
+<script>
+    function showCoords(z){
+        let x = z.offsetX;
+        let y = z.offsetY;
+        document.getElementById("output").innerText =`X=${x} ` + ` Y=${y}`
+    }
+</script>
+
+</body>
+</html>

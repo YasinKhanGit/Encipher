@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task-17</title>
+</head>
+<body>
+<select id="course">
+    <option value="">Select language</option>
+    <option value="C">C</option>
+    <option value="C++">C++</option>
+    <option value="Python">Python</option>
+</select>
+
+<p id="result"></p>
+</body>
+<script>
+    document.getElementById("course").addEventListener("change",value) 
+    function value() {
+         var selected = document.getElementById("course").value;
+        document.getElementById("result").innerText ="Selected value is " + selected;
+    };
+</script>
+
+</script>
+</html>

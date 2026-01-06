@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .back{
+            background-color: black;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <input type="button" id="my-button" value="click button to change color">
+</body>
+<script>
+    const button=document.getElementById('my-button')
+    button.addEventListener('click',color)
+    function color(){
+        document.body.classList.toggle("back")
+    }
+</script>
+</html>

@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task-16</title>
+</head>
+<body>
+    <form name="myform" onsubmit="return valid()">
+        <input type="text" placeholder="Enter the name" name="user_name"><br><br>
+        <input type="submit" value="Submit">
+    </form>
+</body>
+
+<script>
+    function valid() {
+        var a = document.forms["myform"]["user_name"].value;
+        if (a === "") {
+            alert("The name must be filled");
+            return false;
+        }
+        return true; 
+    }
+</script>
+</html>
