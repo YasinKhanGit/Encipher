@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task-2</title>
+    <style>
+        .back{
+            background-color: pink;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <input type="button" id="butt" value="Click button to change color">
+</body>
+
+<script>
+    const button = document.getElementById('butt');
+    let timer;
+
+    function changeColor() {
+        document.body.classList.toggle("back");
+    }
+
+    button.addEventListener('click', startTimer);
+    function startTimer() {
+        clearTimeout(timer);   
+        timer = setTimeout(changeColor, 5000);
+    }
+
+</script>
+</html>

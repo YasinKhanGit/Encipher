@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task-7</title>
+</head>
+<body>
+    <p id="count"></p>
+</body>
+<script>
+    let a=document.getElementById('count')
+    let b=0;
+    let c=setInterval(time,1000)
+    function time(){
+        b+=1
+        a.innerHTML=b
+    }
+    setTimeout(stop,10000)
+    function stop(){
+        clearInterval(c)
+        a.innerHTML="the time is stop"
+    }
+</script>
+</html>

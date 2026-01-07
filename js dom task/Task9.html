@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task-9</title>
+</head>
+<body>
+    <div id="name">
+        <ol>
+            <li id="l">1</li>
+            <li id="i">2</li>
+            <li id="f">3</li>
+            <li id="g">4</li>
+        </ol>
+    </div>
+    <p id="output"></p>
+
+    <script>
+    let o=document.getElementById('output')
+    let a=document.getElementById('name');
+    a.addEventListener('click',(e)=>{
+        o.innerHTML=e.target.tagName
+        if(e.target.tagName=="LI"){
+            l.style.backgroundColor="red";
+        }
+         if(e.target.tagName=="LI"){
+            i.style.backgroundColor="blue";
+        }
+         if(e.target.tagName=="LI"){
+            f.style.backgroundColor="green";
+        }
+         if(e.target.tagName=="LI"){
+            g.style.backgroundColor="yellow";
+        }
+    })
+
+</script>
+</body>
+
+</html>

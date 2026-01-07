@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task6</title>
+</head>
+<body>
+
+    <p id="msg"></p>
+    <input type="button" onclick="cancelTimer()" value="Click to cancel">
+
+<script>
+    let message = document.getElementById('msg');
+
+    let timer = setTimeout(showMessage, 10000);
+
+    function showMessage(){
+        message.innerText = "This is message come after 10sec";
+    }
+
+    function cancelTimer(){
+        clearTimeout(timer);
+        message.innerText = "It is cancelled";
+    }
+</script>
+
+</body>
+</html>

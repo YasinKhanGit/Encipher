@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TAsk-5</title>
+</head>
+<body>
+    <input type="button" onclick="cancel()" value="click to cancel">
+</body>
+<script>
+    let a=setTimeout(time,10000)
+    function time(){
+        alert("this alert message")
+    }
+    function cancel(){
+        clearTimeout(a)
+        alert("it is cancelled")
+    }
+</script>
+</html>

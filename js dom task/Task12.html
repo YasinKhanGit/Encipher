@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task-12</title>
+</head>
+<body>
+    
+<button id="butt" style="position:fixed; bottom:20px; right:20px;">
+    Back to Top
+</button>
+</body>
+<script>
+    const a = document.getElementById("butt");
+
+    window.addEventListener("scroll", ()=>{
+        if (window.scrollY > 200) {
+            a.style.display = "block";
+        } else {
+            a.style.display = "none";
+        }
+    });
+</script>
+</html>

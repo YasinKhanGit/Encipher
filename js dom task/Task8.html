@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task-8</title>
+</head>
+<body>
+    <input type="button" value="Start" id="start" onclick="sta()">
+    <input type="button" value="Stop" id="stop" onclick="sto()">
+    <p id="result"></p>
+</body>
+
+<script>
+    let timer; 
+    let result = document.getElementById('result');
+    function time(){
+        let time_now = new Date();
+        result.innerText = time_now.toLocaleTimeString();
+    }
+    function sta(){
+            timer = setInterval(time, 1000);
+    }
+    
+    function sto(){
+        clearInterval(timer);
+    }
+</script>
+</html>
